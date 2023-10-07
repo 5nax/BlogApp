@@ -1,0 +1,93 @@
+/* UserPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --accent-color: #0ff;
+  --background-color: #f8f8f8;
+  --error-color: #f00;
+  --light-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  --dark-shadow: 0 0 15px rgb(0 0 0 / 20%);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+}
+
+.welcome-message,
+.articles-header {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  font-size: 45px;
+}
+
+.articles-header {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.articles-list1 {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 800px;
+  margin: left;
+}
+
+.article-item {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.article-item:hover {
+  box-shadow: var(--dark-shadow);
+  transform: translateY(-3px);
+}
+
+.update-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.update-link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media only screen and (width <= 600px) {
+  .welcome-message,
+  .articles-header {
+    font-size: 28px;
+  }
+
+  .articles-list {
+    padding: 0 20px;
+  }
+
+  .article-item {
+    font-size: 16px;
+  }
+}

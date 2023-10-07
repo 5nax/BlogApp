@@ -1,0 +1,45 @@
+/* Example: */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type='text'],
+input[type='file'],
+button {
+  margin-top: 5px;
+}
+
+/* Customize the Quill editor as per your needs */
+.ql-editor {
+  min-height: 200px;
+}
+
+.explore-description1 {
+  font-size: 45px;
+  color: #202020; /* Ash */
+  text-align: center;
+  margin: 10px 100px 30px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+button {
+  padding: 10px;
+  color: #fff;
+  background-color: #000; /* Green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}

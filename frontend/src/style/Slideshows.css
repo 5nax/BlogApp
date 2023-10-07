@@ -1,0 +1,29 @@
+.slideshow-frame {
+  width: 100%; /* Use the full width of the parent element */
+  max-width: 1800px; /* Maximum width of the slideshow */
+  max-height: 600px; /* Maximum height of the slideshow */
+  margin: auto; /* Center the slideshow horizontally */
+  overflow: hidden; /* Ensure the images do not overflow */
+  position: relative; /* Establishes a containing block for absolute or fixed positioned descendants */
+}
+
+.slideshow {
+  width: 100%; /* Use the full width of the .slideshow-frame */
+  height: 100%; /* Use the full height of the .slideshow-frame */
+  display: flex; /* Align children (slides) in a row */
+  transition: transform 0.9s ease-in-out; /* Smooth transition effect for sliding */
+}
+
+.slide {
+  min-width: 100%; /* Ensure each slide uses full width of the .slideshow */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* Adjusts the size of the image, maintaining aspect ratio, to fit within the container */
+  border-radius: 10px;
+}
