@@ -113,6 +113,7 @@ Ensure to have the following installed:
    DB_HOST='Your Host'
    DB_PORT='Your Port'
    DB_NAME='Your Database Name'
+   JWT_SECRET='STRING'
    ```
 4. **Run the Application**
    - Start the frontend and backend services:
@@ -129,7 +130,7 @@ Roaming Nomads can be utilized as a platform to build a vibrant community of tra
 
 👤 **Himal Panta**
 
-- Email: Your Email
+- Email: himalpanta@gmail.com
 - LinkedIn: [https://www.linkedin.com/in/himal-panta-b27873232/]
 
 🔗 **Project Link**
